@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood and Organ Donation System</title>
+    <style>
+        .ss{
+            color: #FF5722;
+        }
+        .video {
+                display: flex;
+                font-size: 20px;
+        }
+        .header{
+            background-color: #222730;
+            display: flex;
+            color: white;
+            padding-left: 50px;
+            margin-left: -5rem;
+            margin-right: -1rem;
+            font-weight: bold;
+        }
+        .class{
+            display: flex;
+            color: white;
+            font-size: 20px;
+            width: 102%;
+            background-color: #FF5722;
+            margin-left: -1rem;
+        }
+        select{
+            padding: 1rem;
+
+        }
+
+        .forms{
+            background-image: url("blood.jpg");
+            margin-top: -40rem;
+            max-width: 50px;
+            margin-left: 5rem;
+        }
+        .button {
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 17rem;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  
+}
+
+.button1:hover {
+  background-color:#FF5722 ;
+  color: white;
+}
+    .side{
+        display: flex;
+        font-size: 25px;
+    }
+    .value{
+            display: flex;
+            font-size: 25px;
+            margin-top: 5rem ;
+        }
+       
+        .box{
+            display: flex;
+            padding: 10px;
+            color: white;
+        }
+        .link{
+            display: flex;
+            background-color:#222730 ;
+            color: white;
+            padding: 14px 25px;
+            text-align: center; 
+            width: 100%;
+            margin-left: -.5rem;
+            
+        }
+
+.containerr {
+  display: flex;
+  width: 103%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #FF5722;
+    background-attachment: fixed;
+  padding: 1rem;
+  margin-left: -1rem;
+}
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(1.0,1.0,1.0,1.0);
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  min-height: 200px;
+}
+
+
+
+
+.card-body p {
+  font-size: 20px;
+  margin: 0 0 40px;
+  text-align: justify;
+}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+
+
+
+}
+.button {
+ 
+  color: black;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    margin-left: 4.5rem;
+
+}
+    </style>
+</head>
+<body>
+        <div class="header">
+        <p><img src="bld.png" style="margin-left: 130px ; opacity: 20px; "><p>
+        <p style="padding-left: 400px; margin-top: 50px; font-size:25px">+916383474107</p>
+        <a href="Register.html"><p style="padding-left: 180px; margin-top: 50px;"><button style="background-color:#FF5722; padding: 15px; cursor: pointer; color: white; border-radius: 50px;"><b>Register</b></button></p></a>
+         <a href="login.html"><p style="padding-left: 10px; margin-top: 50px; width: 200px; color: white; background-color:  #222730"><button style="padding: 15px; cursor: pointer; border-radius: 50px;"><b>Login</b></button></p></a>
+        </div>
+        <div class="class">
+            <h4 style="padding-left:130px; cursor:pointer;"><a href="Review.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Home</button></a></h4></h4></a>
+            <h4 style="padding-left:30px; cursor: pointer;"><a href="blood bank.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Blood Banks</button></a></h4>
+            <h4 style="padding-left:30px; cursor: pointer;"><a href="Blogs.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Blogs</button></a></h4>
+            <h4 style="padding-left:30px; cursor: pointer;"><a href="causes.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Causes</button></a></h4>
+            <h4 style="padding-left:30px; cursor: pointer;"><a href="events.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Events</button></a></h4>
+            <h4 style="padding-left:30px; cursor: pointer;"><a href="video.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Videos</button></a></h4>
+            <h4 style="padding-left: 340px;"><a href="donateus.html"><button style="background-color:#FF5722; color: white; font-size: 20px; border: none; cursor: pointer;">Donate us</button></a></h4>
+
+        </div>
+        <img src="blood.jpg" width="104%" height="700" style="margin-left:-1rem; ">
+        <div class="slide">
+            <div class="forms">
+            <br><br><br><br>
+   <table style="background-color: black; color: white;">
+        <tr>
+            <th><select class="button1" id="java" style = "width:250px; height: 70px; cursor: pointer;"   name= "groups">
+    <option value="--Blood Group--">--Blood Group--</option>
+    <option value="A-">A-</option>
+    <option value="A+">A+</option>
+    <option value="AB-">AB-</option>
+    <option value="AB+">AB+</option>
+    <option value="B-">B-</option>
+    <option value="B+">B+</option>
+    <option value="O-">O-</option>
+    <option value="O+">O+</option>
+    </select>
+    </th>
+    <th>
+        <select class="button1" style = "width:250px; height:70px; cursor: pointer;" name= "groups">
+    <option value="--Select State--">--Select State--</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chandigath(UT)">Chandigath(UT)</option>
+    <option value="Chattigath">Chattigath</option>
+    <option value="Delhi(NCT)">Delhi(NCT)</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Johor(Malaysia)">Johor</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Orissa">Orissa</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Perak(Malaysia)">Perak(Malaysia)</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sabah(Malaysia)">Sabah(Malaysia)</option>
+    <option value="Selangor(Malaysia)">Selangor(Malaysia)</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttar pradesh">Uttar pradesh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+    <option value="Wiliyah persekuturan">Wiliyah persekuturan</option>   
+  </select>
+    </th>
+        </tr>
+        <tr>
+            <th>
+    <select class="button1" style = "width:250px; height:70px; cursor: pointer;" name= "groups">
+    <option value="--Select district--">--Select District--</option>
+    <option value="Ariyalur">Ariyalur</option>
+    <option value="Chengalpattu">Chengalpattu</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Coimbatore">Coimbatore</option>
+    <option value="Cuddalore">Cuddalore</option>
+    <option value="Dharmapuri">Dharmapuri</option>
+    <option value="Dindigul">Dindigul</option>
+    <option value="Erode">Erode</option>
+    <option value="Kallakurichi">Kallakurichi</option>
+    <option value="Kanchipuram">Kanchipuram</option>
+    <option value="Kanyakumari-">Kanyakumari</option>
+    <option value="Karur">Karur</option>
+    <option value="Krishnagiri">Krishnagiri</option>
+    <option value="Madurai">Madurai</option>
+    <option value="Nagapattnam">Nagapattnam</option>
+    <option value="Nmakkal">Nmakkal</option>
+    <option value="Nilgiris">Nilgiris</option>
+    <option value="Perambalur">Perambalur</option>
+    <option value="Ranipet">Ranipet</option>
+    <option value="Salem">Salem</option>
+    <option value="Sivaganga">Sivaganga</option>
+    <option value="Tenkasi">Tenkasi</option>
+    <option value="Thanjavur">Thanjavur</option>
+    <option value="Theni">Theni</option>
+    <option value="Thoothukudi">Thoothukudi</option>
+    <option value="Tiruchirapalli">Tiruchirapalli</option>
+    <option value="Tirunelveli">Tirunelveli</option>
+    <option value="Tirupathur">Tirupathur</option>
+    <option value="Tiruppur">Tiruppur</option>
+    <option value="Tiruvallur">Tiruvallur</option>
+    <option value="Tiruvannamalai">Tiruvannamalai</option>
+    <option value="Vellore">Vellore</option>
+    <option value="Villupuram">Villupuram</option>
+    <option value="Virudhunagar">Virudhunagar</option>
+  </select></th>
+  <th>
+  <select class="button1" style = "width:250px; height:70px; cursor: pointer;" name= "groups">
+    <option value="--All Tehsil--">--All Tehsil--</option>
+    <option value="Ariyalur">Ariyalur-Sendurai</option>
+    <option value="Chengalpattu">Chengalpattu-Cheyyur</option>
+    <option value="Chennai">Chennai-Guindy</option>
+    <option value="Coimbatore">Coimbatore-Perur</option>
+    <option value="Cuddalore">Cuddalore-Pnruti</option>
+    <option value="Dharmapuri">Dharmapuri-Harur</option>
+    <option value="Dindigul">Dindigul-Attur</option>
+    <option value="Erode">Erode-Thalavadi</option>
+    <option value="Kallakurichi">Kallakurichi-Chinnasalem</option>
+    <option value="Kanchipuram">Kanchipuram-Walajabad</option>
+    <option value="Kanyakumari-">Kanyakumari-Tholavai</option>
+    <option value="Karur">Karur-Kadavur</option>
+    <option value="Krishnagiri">Krishnagiri-Bargur</option>
+    <option value="Madurai">Madurai-Peraiyur</option>
+    <option value="Nagapattnam">Nagapattnam-Sirkali</option>
+    <option value="Nmakkal">Namakkal-Kolli Hills</option>
+    <option value="Nilgiris">Nilgiris-Rasipuram</option>
+    <option value="Perambalur">Perambalur-Kunnam</option>
+    <option value="Ranipet">Ranipet-Illupur</option>
+    <option value="Salem">Salem-Attur</option>
+    <option value="Sivaganga">Sivaganga-Karaikudi</option>
+    <option value="Tenkasi">Tenkasi-Sivagiri</option>
+    <option value="Thanjavur">Thanjavur-Budalur</option>
+    <option value="Theni">Theni-Periyakulam</option>
+    <option value="Thoothukudi">Thoothukudi-Eral</option>
+    <option value="Tiruchirapalli">Tiruchirapalli-Lalguidi</option>
+    <option value="Tirunelveli">Tirunelveli-Manur</option>
+    <option value="Tirupathur">Tirupathur-Ambur</option>
+    <option value="Tiruppur">Tiruppur-Kangayam</option>
+    <option value="Tiruvallur">Tiruvallur-Nannilam</option>
+    <option value="Tiruvannamalai">Tiruvannamalai-Arani</option>
+    <option value="Vellore">Vellore-Gudiyattam</option>
+    <option value="Villupuram">Villupuram-Gingee</option>
+    <option value="Virudhunagar">Virudhunagar-Sathur</option>
+    </select>
+            </th>
+        </tr>
+    </table>
+    </div><br>
+ <button class="button button1" onclick="getOption()" style="margin-left: 270px;">Find Blood</button>
+    </div>
+    <div style="position: absolute; margin-left: 45rem; margin-top: -18rem; box-shadow: white;">
+
+    </div>
+</div>
+    </div>
+ 
+</div>
+<p id="out" style="color:white; margin-left: 2rem; font-size: 25px;">
+        Blood Group
+    </p>
+    <script type="text/javascript">
+    function getOption() {
+        selectElement = document.querySelector('#java');
+        output = selectElement.value;
+        document.querySelector('#out').textContent = output;
+    }
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="containerr">
+  <div class="card">
+    <div class="card-header">
+     
+    </div>
+    <div class="card-body">
+    <br>
+      <p>
+        We are grateful for our real hero and hope for them alway success who helps donate to blood banj today.
+      </p>
+     <a href="donateus.html"><button class="button button4 button1">Donate Us</button></a>
+    </div>
+  </div>
+  <div class="card">
+    
+    
+    <div class="card-body">
+     <br>
+      <p>
+        You will become a vital part of the  biggest blood donation organization blood bank today in the world.
+      </p>
+     <a href="Register.html"><button class="button button4 button1">Join now</button></a>
+     
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+      <br>
+    <p>
+        Blood bank today  receive recent causes to fundraising for charitable projects We need your help.
+    </p>
+     <a href="causes.html"><button class="button button4 button1">Causes</button></a>
+    </div>
+</div>
+  </div><br><br>
+ 
+
+  <!-- Youtube Video -->
+    <h2>Be the reason for someone's heartbeat</h2>
+    <div class="video">
+    <ul>
+        <li>A donation of blood means a few minutes to you, but a lifetime for somebody else. Don't let fools or mosquitoes suck your blood, put it to good use.</li>
+        <li>The donation of blood makes the difference between life and death. Your blood donation can give a precious smile to someone's face.</li>
+        <li>Whole blood donation is the most common type of blood donation. During this donation,you donate about a pint (about half a liter) of whole blood.</li>
+        <li>The blood is then separated into its components — red cells, plasma and sometimes platelets.</li>
+    </ul>
+  <iframe style="margin-top:-2rem;" width="560" height="250" src="https://www.youtube.com/embed/kOISEM6L4xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+  </div>
+<p style="font-size:25px; text-align: center;"><b>Total Blood Donor Register With Blood Bank Today</b></p><br>
+    <div class="box">
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 20rem;cursor: pointer; color: white; font-size: 23px;"><b>A-</b><br>115</button>
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 3rem;cursor: pointer; color: white; font-size: 23px;"><b>AB-</b><br><br>70</button>
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 3rem;cursor: pointer; color: white; font-size: 23px;"><b>B-</b><br><br>111</button>
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 3rem;cursor: pointer; color: white; font-size: 23px;"><b>o-</b><br><br>167</button>
+    </div>
+    <div class="box">
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 20rem; cursor: pointer; color: white; font-size: 23px;"><b>A+</b><br><br>562</button>
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 3rem; cursor: pointer; color: white; font-size: 23px;"><b>AB+</b><br><br>301</button>
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 3rem;cursor: pointer; color: white; font-size: 23px;"><b>B+</b><br><br>825</button>
+        <button style="width: 150px; height: 90px; background-color: #FF5722; margin-left: 3rem;cursor: pointer; color: white; font-size: 23px;"><b>o+</b><br><br>797</button>
+    </div>
+<div class="value">
+    <img src="donate.png" alt="Flowers in Chania" width="460" height="345">
+    <div style="font-size:35px;"><b>Why should Donate Blood</b><br>
+    <p style="font-size:20px; font-weight:100px; margin-right: 16rem;">Potential donors are evaluated for anything that might make their blood unsafe to use. The screening includes testing for diseases that can be transmitted by a blood transfusion, including HIV and viral hepatitis. The donor must also answer questions about medical history and take a short physical examination to make sure the donation is not hazardous to his or her health. How often a donor can donate varies from days to months based on what component they donate and the laws of the country where the donation takes place. For example, in the United States, donors must wait 56 days (eight weeks) between whole-blood donations but only seven days between platelet apheresis donations and twice per seven-day period in plasmapheresis.</p>
+    <a href="Register.html"><button style="background-color:white; color: black; font-size: 20px; border: 1 px solid black; cursor: pointer;">Be a Donor</button></a></h4></a></button>
+    </div>
+</div>
+    
+</div>
+
+    <h2 style="text-align: center; font-size: 35px;">Blood Bank Today</h2>
+    <p style="text-align: center; font-size: 25px">Help Some one donate blood and save life</p>
+    <p style="margin-left:10rem; font-size: 20px;">By donating blood bank today,many lives are saved and hope is given to many whose situation may otherwise be hopeless.</p>
+    <p style="text-align:center; font-size: 20px">Blood donors give such patients a second chance of life</p>
+    <h2 style="text-align:center;">See More details</h2>
+    <div style="background-color: #222730; width: 103%; margin-left: -20px; ">
+        <br>
+        <h1 style="text-align:center; color:white;">Our Sponsers</h1><br><br>
+        <button style="background-color:white;  color: black; width: 300px; height: 300px; margin-left: 10rem; font-size: 20px;"><b><i>We deliver the success to every scale business</i></b><br><br>"Reetack web development is the perfect matching of your business need because we provide to your business in the impressive way with branding."<br><br><a href="" style="text-decoration: none; color:#FF5722;">->Visit Us</a></button>
+        <button style="background-color:white; color: black; width: 300px; height: 300px; margin-left: 5rem; font-size: 20px;"><b><i>Which Services We Provide?</i></b><br>"01 Web Design & Development<br>02 Android app Development<br> 03 E-Commerce Websites.<br>04 Graphics Design<br>05 Social SEO/SEM<br>06 Software Development.<br><br><a href="" style="text-decoration: none;color:#FF5722;">-> Visit Us</a></button>
+        <button style="background-color:white;  color: black; width: 300px; height: 300px; margin-left: 5rem; font-size: 20px;"><b><i>We deliver the success to every scale business</i></b><br><br>"Reetack web development is the perfect matching of your business need because we provide to your business in the impressive way with branding."<br><br><a href="" style="text-decoration: none;color:#FF5722;">->Visit Us</a></button><br><br><br><br><br><br>
+    </div>
+    <div class="header">
+        <p><img src="bld.png" style="margin-left: 90px ; margin-left: 8rem ;"><br><b style="margin-left:4rem; font-size:25px;">3291 Donors Already Collected</b></p><br>
+        
+        <div style="margin-left: 23rem;">
+        <h2>About Us</h2>
+        <p><a href="About1.html" style="color:#FF5722;">About Us</a><br></p>
+        <p><a href="Review.html" style="color:#FF5722;">How It Works</a><br></p>
+        <p><a href="team.html" style="color:#FF5722;">Team</a></p>
+        </div>
+        <div style="margin-left: 6rem">
+        <h2>Press</h2>
+        <p><a href="News.html" style="color:#FF5722;">Latest News</a><br></p>
+        <p><a href="file:///C:/Users/ELCOT/Desktop/Html/events.html" style="color:#FF5722;">Events</a><br></p>
+        <p><a href="About1.html" style="color:#FF5722;">Awards</a></p>
+        </div>
+        <div style="margin-left: 6rem">
+        <h2>Get In Touch<br></h2>
+        <p><a href="file:///C:/Users/ELCOT/Desktop/Html/blogs1.html"><a href="file:///C:/Users/ELCOT/Desktop/Html/Blogs.html" style="color:#FF5722;">Blogs</a></a><br></p>
+        <p><a href="file:///C:/Users/ELCOT/Desktop/Html/causes.html" style="color:#FF5722;">Causes</a><br></p>
+        <p><a href="Register.html" style="color:#FF5722;">Make A Blood Donor</a></p>
+        </div>
+    </div>
+    <div class="link">
+        <a href="https://www.facebook.com/BloodBankToday/" style="color:white;"><button style="background-color: #4267B2; border-radius: 30px; width: 50px; height: 50px; cursor:pointer; margin-left: 30rem;" ><b style="color:white; font-size: 23px;">f</b></button></a>
+        <a href="https://twitter.com/bloodbanktoday" style="color:white;"><button style="background-color:#4267B2; width:50px; height: 50px; cursor:pointer; margin-left: 2rem; border-radius: 30px; width: 50px;" ><b style="color:white; font-size: 23px;">t</b></button></a>
+        <a href="https://plus.google.com/105137506464994142998" style="color:white;"><button style="background-color:#fff;border-radius: 30px; width:50px; height: 50px; cursor:pointer; margin-left: 2rem; font-size: 23px;" >G+</button></a>
+        <a href="https://www.instagram.com/bloodbanktoday/" style="color:white;"><button style="background-color:#fff;border-radius: 30px; width:50px; height: 50px; cursor:pointer; margin-left: 2rem; font-size: 23px;" >I</button></a>
+        <a href="https://www.youtube.com/channel/UCFwdiOCj_TToB4adfLF1nqA" style="color:white;"><button style="background-color:red;border-radius: 30px; width:50px; height: 50px; cursor:pointer; margin-left: 2rem;" ><b style="color:white; font-size: 23px">Y</b></button></a>
+         <a href="https://in.linkedin.com/in/blood-bank-today-653272152" style="color:white;"><button style="background-color:#fff;border-radius: 30px; width:50px; height: 50px; cursor:pointer; margin-left: 2rem; font-size: 23px;" >in</button></a>
+    </div>
+    <div class="header">
+    <h1 style="text-align:center; margin-left:23rem;">Copyright @ 2022. All Rights Reserved By VIT Vellore</h1>
+    </div>
+    <div class="header">
+        <p style="text-align:center; margin-left: 36rem;">Design & Develop By Bsc Students of VIT
+</p>
+    </div>
+    <div class="header">
+         <p style="text-align:center; margin-left:37rem;">Done For Web Development project..!!</p>
+    </div>
+</body>
+</html>
